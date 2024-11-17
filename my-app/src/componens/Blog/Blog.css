@@ -1,0 +1,93 @@
+.Blog {
+    background-image: url("../../../public/blog.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.dark .Blog::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.562);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+
+
+}
+
+.Blog .box {
+    position: absolute;
+    left: 0;
+    top: 36%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.Blog .box .left {
+    padding: 7px;
+    transition: 2s;
+}
+
+.Blog .box .right {
+    padding: 7px;
+    transition: 2s
+}
+
+.Blog .box .data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+
+}
+
+.Blog .box .data .icon {
+    flex-basis: 30%;
+
+}
+
+.Blog .box .data .info {
+    flex: 1;
+
+}
+
+.Blog .box .data .info h4 {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+
+.dark .Blog .box .data .info h4 {
+    color: black;
+}
+
+.Blog .box .data .info p {
+    max-width: 370px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/*media quary response*/
+
+@media (max-width:992px) {
+    .Blog {
+        background-position: -464px 0px;
+    }
+
+    .Blog .box {
+        display: none;
+    }
+}

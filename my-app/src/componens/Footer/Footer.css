@@ -1,0 +1,173 @@
+.Footer {
+    background-color: black;
+    color: var(--text);
+    padding: 40px;
+    text-transform: capitalize;
+}
+
+.Footer .head-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.Footer .head-footer .logo {
+
+    flex-basis: 49%;
+}
+
+.Footer .head-footer .logo img {
+    max-width: 100%;
+    width: 200px;
+}
+
+.Footer .head-footer .text {
+
+    flex: 1;
+}
+
+.Footer .head-footer .text h2 {
+    font-size: 40px;
+    max-width: 400px;
+    line-height: 2;
+}
+
+
+/*body footer*/
+.Footer .body-footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.Footer .body-footer .format {
+
+    flex: 1;
+}
+
+.Footer .body-footer .format h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.Footer .body-footer .format .email {
+    padding: 23px 0px;
+    width: 90%;
+    color: var(--text);
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 30px;
+    display: block;
+}
+
+.Footer .body-footer .format .email:focus {
+    outline: none;
+}
+
+.Footer .body-footer .format .cheak {
+    margin-right: 4px;
+}
+
+.Footer .body-footer .format span {
+    color: var(--pargraph);
+    font-size: 12px;
+    margin-right: 4px;
+}
+
+.Footer .body-footer .format a {
+    font-size: 12px;
+}
+
+.Footer .body-footer .contact {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.Footer .body-footer .contact .socil h3,
+.Footer .body-footer .contact .Menu h3,
+.Footer .body-footer .contact .Say-Hello h3 {
+    margin-bottom: 20px;
+}
+
+.Footer .body-footer .contact .socil .links a,
+.Footer .body-footer .contact .Menu ul li,
+.Footer .body-footer .contact .Say-Hello a {
+    display: block;
+    color: var(--pargraph);
+    margin-bottom: 9px;
+    transition: 1s;
+}
+
+.Footer .body-footer .contact .socil .links a:hover,
+.Footer .body-footer .contact .Menu ul li:hover,
+.Footer .body-footer .contact .Say-Hello a:hover {
+    color: var(--text);
+
+}
+
+
+
+.Footer .body-footer .contact .Say-Hello a {
+    font-size: 10px;
+}
+
+
+/*feed footer*/
+.Footer .fead-footer {
+    border: 1px solid rgba(255, 255, 255, 0.425);
+    padding: 20px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.637);
+    letter-spacing: 1px;
+}
+
+/*icon top*/
+.top {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 30px;
+    background-color: var(--scound);
+    color: var(--text);
+    border: none;
+
+
+
+}
+
+
+
+/*media quarry responsef*/
+
+@media(max-width:998px) {
+    .Footer {
+        overflow: hidden;
+    }
+
+    .Footer .head-footer {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .Footer .body-footer {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .Footer .body-footer .format {
+        margin-bottom: 50px;
+    }
+
+    .fead-footer .body-footer .contact {
+        flex-direction: column;
+    }
+}

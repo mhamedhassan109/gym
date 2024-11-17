@@ -1,0 +1,123 @@
+.Hero {
+    display: flex;
+
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    padding: 20px;
+    margin: 2.5rem 0;
+    text-transform: capitalize;
+
+}
+
+.leftsection {
+    flex: 1;
+}
+
+.leftsection h1 {
+    font-size: 50px;
+    line-height: 1.6;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.leftsection h1 span {
+    font-size: 60px;
+}
+
+.leftsection p {
+    color: var(--pargraph);
+    line-height: 2;
+}
+
+.leftsection .holder {
+    position: relative;
+}
+
+.leftsection .holder .cover {
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    width: 206px;
+    height: 49px;
+    transform: translate(0px, 0px);
+    position: absolute;
+    top: 44px;
+    left: 7px;
+    transition: 3s;
+}
+
+
+.leftsection button {
+    margin-top: 30px;
+    padding: 14px 55px;
+    background-color: transparent;
+    color: var(--text-dark);
+    text-transform: capitalize;
+    font-size: 20px;
+    border: 1px solid;
+    transition: 1s;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+
+
+}
+
+.dark .leftsection button {
+    color: white;
+}
+
+
+.leftsection button:hover {
+    transform: translate(8px, 11px);
+    border: none;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    color: var(--text);
+    background-color: var(--scound);
+}
+
+
+
+.rightsection {
+    flex-basis: 40%;
+    overflow: hidden;
+}
+
+.rightsection .images {
+    width: 80%;
+
+
+
+}
+
+.rightsection .images img {
+    max-width: 100%;
+    margin-right: -500px;
+}
+
+
+/*media quarry responsef*/
+
+@media(max-width:998px) {
+    .Hero {
+        flex-direction: column;
+    }
+
+    .Hero .leftsection {
+        text-align: center;
+    }
+
+    .leftsection .holder {
+        display: block;
+        width: 32%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2.7rem;
+    }
+
+    .leftsection .holder .cover {
+        display: none;
+    }
+}

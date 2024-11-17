@@ -1,0 +1,89 @@
+.Testmonlis {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-transform: capitalize;
+    background-image: url("../../../public/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px 0px;
+}
+
+.Testmonlis .carsouer {
+    overflow: hidden;
+    width: 700px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.Testmonlis .carsouer .slider-inner {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.Testmonlis .carsouer .slider-inner .item {
+    border: 1px solid white;
+    cursor: grab;
+    width: 480px;
+    height: 680px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 680px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+
+}
+
+.Testmonlis .carsouer .slider-inner .item .text {
+    text-align: center;
+}
+
+.slider-inner .item .text img {
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+.slider-inner .item .text h4 {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.slider-inner .item .text h6 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.slider-inner .item .text p {
+    line-height: 2;
+    max-width: 300px;
+    margin-bottom: -60px;
+    color: rgba(255, 255, 255, 0.692);
+}
+
+.Testmonlis .carsouer .slider-inner .item .images img {
+    border: 1px solid;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 17px rgb(209, 206, 206);
+}
+
+.Testmonlis .carsouer .slider-inner .item img {
+    max-width: 100%;
+}
+
+/*media quarry response*/
+
+@media (max-width:992px) {
+    .Testmonlis .carsouer {
+        width: 539px;
+    }
+}

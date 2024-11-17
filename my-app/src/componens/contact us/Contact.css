@@ -1,0 +1,85 @@
+.Contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.left-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    ;
+}
+
+.left-section .information {
+    padding: 20px;
+}
+
+.left-section .information h6 {
+    font-size: 18px;
+    letter-spacing: 10px;
+    margin-bottom: 30px;
+}
+
+.left-section .information h1 {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.left-section .information p {
+    margin: 30px 0;
+    max-width: 295px;
+    font-size: 18px;
+    color: #776;
+    line-height: 1.7;
+}
+
+.left-section .information img {
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.right-section {
+    flex-basis: 45%;
+    overflow: hidden;
+}
+
+.right-section .folder {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.right-section .folder img {
+    max-width: 100%;
+    width: 360px;
+}
+
+.right-section .folder .img1 {
+    transform: translateX(130px);
+}
+
+
+/*media quarry response*/
+
+@media (max-width:992px) {
+    .Contact {
+        flex-direction: column;
+    }
+
+    .Contact .information {
+        text-align: center;
+    }
+
+    .Contact .information p {
+        max-width: 100%;
+    }
+
+    .Contact .right-section .folder {
+        justify-content: start;
+    }
+}

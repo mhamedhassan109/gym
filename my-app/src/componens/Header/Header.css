@@ -1,0 +1,251 @@
+.header {
+    background-size: cover;
+    background-position: 0px -20px;
+    height: 93vh;
+    animation: change infinite ease-in 10s;
+
+}
+
+@keyframes change {
+    0% {
+        background-image: url("../../../public/head1.jpg");
+        background-position: 0px 40px;
+    }
+
+    50% {
+        background-image: url("../../../public/head2.jpg");
+        background-position: 0px -20px;
+    }
+
+    75% {
+        background-image: url("../../../public/head1.jpg");
+        background-position: 0px 40px;
+    }
+
+    100% {
+        background-image: url("../../../public/head3.jpg");
+        background-position: 0px 0px;
+    }
+}
+
+.header .head {
+    position: fixed;
+    left: 68px;
+    top: 0;
+    z-index: 3;
+    width: 90%;
+    background-color: var(--main);
+    color: var(--text);
+    margin-bottom: 1rem;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 3px solid var(--scound);
+}
+
+.light .header .head {
+    background-color: var(--text);
+    color: black;
+}
+
+
+/*logo */
+
+.header .head .logo {
+    flex-basis: 10%;
+}
+
+.header .head .logo img {
+    max-width: 100%;
+
+}
+
+
+
+/*list menu */
+
+.header .head .list-menu {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    text-transform: capitalize;
+    font-size: 16px;
+
+}
+
+.header .head .list-menu>ul {
+    display: flex;
+}
+
+.header .head .list-menu>ul>li {
+    padding: 10px 20px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.header .head .list-menu>ul>li::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 1px;
+    background-color: var(--scound);
+    left: 10px;
+    bottom: 0px;
+    transition: 2s;
+
+}
+
+.header .head .list-menu>ul>li.active::before {
+    width: 100%;
+}
+
+.header .head .list-menu>ul>li:hover {
+    cursor: pointer;
+
+}
+
+.active {
+
+    color: var(--scound);
+}
+
+
+
+
+/*settings*/
+.setting {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.setting:hover {
+    color: var(--scound);
+}
+
+.other-menu {
+    position: fixed;
+    background-color: var(--main);
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 350px;
+    color: var(--text);
+    text-align: center;
+    padding: 20px;
+    z-index: 5;
+
+
+}
+
+.other-menu .heding {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    border-bottom: 1px solid var(--scound);
+    padding: 20px 0;
+
+}
+
+.other-menu .heding .close {
+    cursor: pointer;
+}
+
+.other-menu .body-menu {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.other-menu .body-menu .option {
+    margin: 2.7rem 0;
+}
+
+.other-menu .body-menu .option h5 {
+    font-size: 18px;
+    text-transform: capitalize;
+    text-align: left;
+    margin-bottom: 2.7rem;
+    position: relative;
+
+}
+
+.other-menu .body-menu .option h5::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: var(--scound);
+    left: 0px;
+    bottom: -13px;
+}
+
+.other-menu .body-menu .option .option-body {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.other-menu .body-menu .option span {
+    font-size: 19px;
+
+}
+
+.other-menu .body-menu .option span.active {
+    color: orange;
+}
+
+.other-menu .body-menu .option>ul>li {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 10px;
+    justify-content: start;
+}
+
+.other-menu .body-menu .option>ul>li>a {
+    color: var(--text);
+    text-transform: capitalize;
+}
+
+.other-menu .footer-menu .logo {
+    width: 300px;
+    transform: translateY(10px);
+    opacity: 0.2;
+    animation: opcaity infinite linear 2s;
+}
+
+@keyframes opcaity {
+    0% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
+
+/*media quarry responsef*/
+
+@media(max-width:998px) {
+    .header {
+        background-image: url("../../../public/head1.jpg");
+        background-position: 0px 40px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 52vh;
+        animation: none;
+    }
+
+    .header .head {
+        left: 0;
+        width: 100%;
+    }
+}
